@@ -1,9 +1,15 @@
-currentQuestion;
+currentQuestion = generateQuestion(questions);
 
-generateQuestion(questions);
-
-function checkQuestion(){
-
+function checkQuestion(id){
+    if(document.getElementById(id).innerHTML == currentQuestion.correctAnswer){
+        document.getElementById(id).style.backgroundColor = "green"; 
+    } else{
+        document.getElementById(id).style.backgroundColor = "red";
+    }
+    setTimeout(()=>{
+        document.getElementById(id).style.backgroundColor = "azure";
+        currentQuestion = generateQuestion(questions);
+    },1000);
 }
 
 function generateQuestion(questions){
@@ -19,9 +25,12 @@ function generateQuestion(questions){
     answer4 = document.getElementById("4");
     // Fragedetails, den HTML Elementen zuweisen
     question.innerHTML = currentQuestion.question;
-    image.src = currentQuestion.imageURL;
+    image.src = currentQuestion.imageURI;
     answer1.innerHTML = currentQuestion.answers[0];
     answer2.innerHTML = currentQuestion.answers[1];
     answer3.innerHTML = currentQuestion.answers[2];
     answer4.innerHTML = currentQuestion.answers[3];
+
+    return currentQuestion;
+
 }

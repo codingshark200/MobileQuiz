@@ -2,8 +2,8 @@ questions = [
 
     {
         "question" : "Wer war Luke Skywalkers Vater?",
-        "answers" : ["Darth Maul", "Darth Sidious", "Count Doku", "General Grevious"],
-        "correctAnswer" : "General Grevious",
+        "answers" : ["Darth Maul", "Darth Sidious", "Count Doku", "Darth Vader"],
+        "correctAnswer" : "Darth Vader",
         "imageURI" : "img/a1_darthVader.png" 
     },
     {

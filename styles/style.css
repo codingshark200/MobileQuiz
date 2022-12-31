@@ -31,7 +31,7 @@ h1{
     height : 40%;
     margin-left: 10%;
     margin-top: 2%;
-    background-color: blue;
+    background-color: rgb(5, 241, 210);
 }
 
 #answers{
@@ -46,4 +46,5 @@ h1{
     margin: 0% 0% 4% 10%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
+    background-color: azure;
 }
